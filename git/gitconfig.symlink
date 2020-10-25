@@ -43,3 +43,8 @@
 	email = softwarez_gelion@hotmail.com
 [commit]
 	template = /Users/last3oy/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
